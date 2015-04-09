@@ -1,0 +1,77 @@
+.slides {
+  position:relative;
+  z-index: $content-zindex;
+  @include font-smoothing;
+  top:500px;
+  left: 0;
+  background-color:white;
+  min-height:750px;
+  background: url("/assets/img/pattern-gray-blur-bg.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .about-cover {
+	  min-height: 100%;
+  	min-width: 1024px;
+  	width: 100%;
+  	height: auto;
+  	position: absolute;
+  	top: 10%;
+  	overflow-x: hidden;
+    z-index:$content-zindex;
+  	left: 50%;
+    margin-left: -400px;
+  }
+
+  @include MQ(M) {
+	 .about-cover {
+      left: 0;
+      margin-left: 0;   /* 50% */
+      top: 0;
+    }
+  }
+
+  @include MQ(L) {
+	 .about-cover {
+      left: 0;
+      margin-left: 0;   /* 50% */
+      top: 0;
+    }
+  }
+}
+
+.slide-title {
+  position:absolute;
+  z-index:$content-zindex-over;
+  background-color: $primary-color;
+  padding-left:50px;
+  height:100px;
+  @include span-columns(5);
+  @include shift(7);
+
+  h1 {  
+    font-family: $title-font;
+    font-weight:300;
+    color:white;
+    font-size:32px;
+    position:relative;
+    line-height:normal;
+  }
+}
+
+.content {
+  margin-top:250px;
+  color: $gray;
+  position:relative;
+  z-index:$content-zindex;
+  font-family:$body-font;
+
+  p {
+    position:absolute;
+    top:150px;
+    padding-left:50px;
+    @include span-columns(7);
+  }
+}

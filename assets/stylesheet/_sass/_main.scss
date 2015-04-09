@@ -1,0 +1,23 @@
+.centeredElement {
+	position: relative;
+	z-index:$content-zindex-over;
+	background-color: $background-color;
+	width:400px;
+	padding-left:50px;
+	position:absolute;
+	width:100%;
+	text-align:center;
+}
+
+@include MQ(M) {
+	.centeredElement  {
+		
+	}
+}
+
+@include MQ(L) {
+	.centeredElement  {
+	
+	}
+}
+

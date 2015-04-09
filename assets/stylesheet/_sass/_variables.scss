@@ -1,0 +1,35 @@
+// fonts 
+$body-font: 'PT Sans', sans-serif;
+$title-font: 'Titillium Web', sans-serif;
+$italic: '', sans-serif;
+
+//header height
+$header-height-S: 60px;
+$header-height-M: 100px;
+
+// z-index 
+$intro-zindex: 0;
+$content-zindex: 1;
+$content-zindex-over: 2;
+$nav-zindex: 3;
+$header-zindex: 4;
+
+/* color */
+$primary-color: rgba(233,79,40,1);
+$secondary-color: rgba(255,216,23,1);
+$background-color: rgba(38, 65, 242, 1);
+$off-white-color: rgba(242, 231, 183, 1);
+$terciar-color: rgba(7,28,54,1);
+$white-trans: rgba(255, 255, 255, .8);
+$gray: rgba(100,100,100,1);
+
+
+// header height 
+$header-S: 50px;
+$header-M: 70px;
+
+//intro height
+$intro-height-S: 300px;
+$intro-height-M: 400px;
+$intro-height-L: 600px;
+
