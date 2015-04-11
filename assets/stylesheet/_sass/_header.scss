@@ -81,9 +81,10 @@
 	display:inline-block;
 	width: 85px;
 	height: auto;
-	margin-top:-55px;
-	margin-left:-45px;
+	margin-top:-50px;
+	margin-left:0;
 	position:absolute;
+	@include center();
 
 	img {
 		width:40px;
@@ -94,11 +95,17 @@
 	.hand-left {
   		margin-left: -38px;
   		transform-origin: 20px 66px;
+  		-moz-transform-origin: 20px 66px;
+  		-webkit-transform-origin: 20px 66px;
+  		-ms-transform-origin: 20px 66px;
   	}
 
 	.hand-right {
 		margin-top: 11px;
 		transform-origin: 20px 64px;
+		-moz-transform-origin: 20px 64px;
+		-webkit-transform-origin: 20px 64px;
+		-ms-transform-origin: 20px 64px;
 	}
 }
 
