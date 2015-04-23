@@ -1,23 +1,26 @@
-.centeredElement {
+.container {
+	width: 100%;
+	top: 0;
+	height: auto;
+}
+
+footer {
 	position: relative;
-	z-index:$content-zindex-over;
+	height: 100px;
+	top: 500px;
 	background-color: $background-color;
-	width:400px;
-	padding-left:50px;
+}
+
+
+#about, #gallery, #collaborate, #contact {
 	position:absolute;
-	width:100%;
-	text-align:center;
+	margin-top: -175px;
 }
 
-@include MQ(M) {
-	.centeredElement  {
-		
+
+@include MQ(M); @include MQ(L) {
+	#about, #gallery, #collaborate, #contact {
+		position:absolute;
+		margin-top: -75px;
 	}
 }
-
-@include MQ(L) {
-	.centeredElement  {
-	
-	}
-}
-

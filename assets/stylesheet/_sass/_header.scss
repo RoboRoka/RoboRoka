@@ -17,7 +17,7 @@
 	position: fixed;
 	margin:0;
 	right: 0;
-	padding: 0 1em;
+	padding: 1em;
 	text-align:left;
 	background-color: white;
 
@@ -78,6 +78,7 @@
 }
 
 .header-logo {
+	visibility: hidden;
 	display:inline-block;
 	width: 85px;
 	height: auto;
@@ -102,10 +103,22 @@
 
 	.hand-right {
 		margin-top: 11px;
-		transform-origin: 20px 64px;
-		-moz-transform-origin: 20px 64px;
-		-webkit-transform-origin: 20px 64px;
-		-ms-transform-origin: 20px 64px;
+		transform-origin: 19px 64px;
+		-moz-transform-origin: 19px 64px;
+		-webkit-transform-origin: 19px 64px;
+		-ms-transform-origin: 19px 64px;
+	}
+}
+
+@include MQ(M){
+	.header-logo {
+		visibility:visible;		
+	}
+}
+
+@include MQ(L){
+	.header-logo {
+		visibility:visible;		
 	}
 }
 
