@@ -18,7 +18,14 @@ footer {
 }
 
 
-@include MQ(M); @include MQ(L) {
+@include MQ(M) {
+	#about, #gallery, #collaborate, #contact {
+		position:absolute;
+		margin-top: -75px;
+	}
+}
+
+@include MQ(L) {
 	#about, #gallery, #collaborate, #contact {
 		position:absolute;
 		margin-top: -75px;
