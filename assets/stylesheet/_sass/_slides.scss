@@ -1,0 +1,219 @@
+.slides {
+    position:relative;
+    z-index: $content-zindex;
+    @include font-smoothing;
+    top:500px;
+    left: 0;
+    background-color:white;
+    height:auto;
+    min-height:700px;
+    padding-bottom:100px;
+}
+
+.background-image {
+    background: url("/assets/img/pattern-gray-blur-bg.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.slide-title {
+    position:absolute;
+    z-index:$content-zindex-over;
+    height:100px;
+    @include span-columns(12);
+    left:0;
+
+    h1 {  
+        font-family: $title-font;
+        font-weight:300;
+        color:white;
+        font-size:32px;
+        position:relative;
+        line-height:normal;
+        text-align:center;
+    }
+}
+
+.content {
+    color: $gray;
+    position:relative;
+    z-index:$content-zindex;
+    font-family:$body-font;
+    padding: 100px 0;
+
+    p {
+        position:relative;
+        padding:50px 0;
+        font-size: 20px;
+        @include span-columns(10);
+        @include shift(1);
+        top: 50px;
+    }
+}
+
+.sub {
+    position:relative;
+    top:100px;
+    display:inline-block;
+    margin-bottom:25px;
+}
+
+.sub-title {
+    position:relative;
+    z-index:$content-zindex-over;
+    @include span-columns(7);
+    @include shift(2.5);
+}
+
+.h2 {   
+    background-color: white;
+    border: 3px dotted $primary-color;
+    height: auto;
+    width: 100%;
+    position:relative;
+    line-height:normal;
+
+    h2 {
+        font-family: $title-font;
+        font-weight:300;
+        color:$background-color;
+        font-size:22px;
+        text-align:center;
+        position:relative;
+    }
+}
+
+.h3 {
+    @extend .h2;
+    top:350px;
+    background-color: white;
+    color:$background-color;
+    text-align:center;
+    font-size:18px;
+    font-family: $title-font;
+    font-weight:300;
+    position:relative;
+    line-height:1;
+    height: auto;
+  
+    p {
+        text-decoration: none;
+        color:$background-color;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@include MQ(M); @include MQ(L) {
+    .h3 {
+        top:350px;
+        font-size:26px;
+        line-height:1;
+        height: 80px;
+    }
+}
+
+.link {
+    @extend .h2;
+    background-color: $primary-color;
+    top:100px;
+
+    p {
+        font-family: $title-font;
+        font-weight:300;
+        color:white;
+        font-size:24px;
+        line-height:.9;
+        text-align:center;
+        position:relative;
+    }
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+
+@include MQ(M); @include MQ(L) {
+.sub-title {
+    @include span-columns(6);
+    @include shift(3);
+}
+
+.h2{
+    height: 75px;
+    line-height:.9;
+
+    h2 {
+      font-size:24px;
+    }
+  }
+}
+
+.sub-content {
+    margin-top:0;
+    color: $gray;
+    position:relative;
+    z-index:$content-zindex;
+    font-family:$body-font;
+    padding-bottom: 50px;
+    @include span-columns(8);
+    @include shift(2);
+
+    p {
+        position:relative;
+        padding:50px 0;
+        font-size: 20px;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+}
+
+@include MQ(M); @include MQ(L) {
+
+    .sub-content {
+        @include span-columns(6);
+        @include shift(3);
+    }
+}
+
+.primary-color {
+    background-color: $primary-color;
+}
+
+.primary-color-trans {
+    background-color: rgba($primary-color,.9);
+}
+
+.secondary-color {
+    background-color: $secondary-color;
+}
+
+.secondary-color-trans {
+    background-color: rgba($secondary-color, .9);
+}
+
+.terciar-color {
+    background-color: $background-color;
+}
+
+.terciar-color-trans {
+    background-color: rgba($background-color, .7);
+}
+
+.text-white {
+    font-family: $title-font;
+    font-weight:300;
+    color:white;
+    font-size:24px;
+    text-align:center;
+    top:250px;
+    position:relative;
+}

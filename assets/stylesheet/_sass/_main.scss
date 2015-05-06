@@ -1,0 +1,33 @@
+.container {
+	width: 100%;
+	top: 0;
+	height: auto;
+}
+
+footer {
+	position: relative;
+	height: 100px;
+	top: 500px;
+	background-color: $background-color;
+}
+
+
+#about, #gallery, #collaborate, #contact {
+	position:absolute;
+	margin-top: -175px;
+}
+
+
+@include MQ(M) {
+	#about, #gallery, #collaborate, #contact {
+		position:absolute;
+		margin-top: -75px;
+	}
+}
+
+@include MQ(L) {
+	#about, #gallery, #collaborate, #contact {
+		position:absolute;
+		margin-top: -75px;
+	}
+}
